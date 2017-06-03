@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="inner-header">
+      <div class="top-bar">
+        <a class="logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
+        <nav class="main-nav">
+          <ul>
+            <li class="main-nav__link"><a href="index.html">Главная</a></li>
+            <li class="main-nav__link"><a>Фотографии</a></li>
+            <li class="main-nav__link"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__link"><a href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="inner-header__about-page">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </p>
+    </header>
+    <main>
+      <p class="call-to-share">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+      </p>
+      <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="main-form__personal main-form--whitebg">
+          <label for="surname">Фамилия:</label>
+          <input type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
+          <label for="name">Имя:</label>
+          <input type="text" name="name" placeholder="Укажите имя *" id="name" required>
+          <label for="father-name">Отчество</label>
+          <input type="text" name="father-name" placeholder="Ну и отчество тоже" id="father name">
+        </fieldset>
+        <fieldset class="main-form__goals main-form--greybg">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <input type="checkbox" name="selfie-with-shark" checked id="selfie-with-shark">
+          <label for="selfie-with-shark">Сделал селфи с акулой</label>
+          <input type="checkbox" name="tan-on-beach" checked id="tan-on-beach">
+          <label for="tan-on-beach">Обгорел на пляже</label>
+          <input type="checkbox" name="chack-noris" id="chack-noris">
+          <label for="chack-noris">Видел Чака Норриса</label>
+          <input type="checkbox" name="gifts" id="gifts">
+          <label for="gifts">Накупил сувениров</label>
+          <input type="checkbox" name="hold-tower" checked id="hold-tower">
+          <label for="hold-tower">Удержал башню</label>
+          <input type="checkbox" name="hotel-destroy" id="hotel-destroy">
+          <label for="hotel-destroy">Разгромил отель</label>
+        </fieldset>
+        <fieldset class="main-form__contacts main-form--whitebg">
+          <label for="tel">Номер телефона</label>
+          <input type="tel" name="tel" placeholder="Номер, пожалуйста" id="tel">
+          <label for="email">Адресс почты</label>
+          <input type="email" name="email" placeholder="Введите почту" id="email">
+        </fieldset>
+        <fieldset class=" main-form__device main-form--greybg">
+          <legend>С каким приложением путешествовали?</legend>
+          <input type="radio" name="ios" id="ios" checked>
+          <label for="ios">Pink для iOS</label>
+          <input type="radio" name="android" id="android">
+          <label for="android">Pink на Android</label>
+          <input type="radio" name="windows" id="windows">
+          <label for="windows">Windows Phone</label>
+        </fieldset>
+        <fieldset class="main-form__about main-form--whitebg">
+          <legend>Опишите свои эмоции</legend>
+          <textarea class="main-form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <input type="submit" class="main-form__submit-btn">
+        <p class="main-form__notice"><span>*</span> — обязательные поля</p>
+      </form>
+    </main>
+    <footer class="inner-footer">
+      <a class="logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
+      <ul class="social-network">
+        <li class="social-network__twitter social-network__item"><a href="#">Twitter</a></li>
+        <li class="social-network__facebook social-network__item"><a href="#">Facebook</a></li>
+        <li class="social-network__youtube social-network__item"><a href="#">Youtube</a></li>
+      </ul>
+      <div class="copyright">
+        <span>Разработанно <img src="#" alt="Лого академии"></span>
+      </div>
+    </footer>
+  </body>
+</html>
