@@ -5,7 +5,8 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="inner-header">
+    <header class="page-header">
+      <h1 class="page-header--title">Пинк -- уникально приложение фотографии</h1>
       <div class="top-bar">
         <a class="logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
         <nav class="main-nav">
@@ -17,16 +18,16 @@
           </ul>
         </nav>
       </div>
-      <p class="inner-header__about-page">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </p>
     </header>
+    <p class="announce">
+      Конкурс на самое безбашенное путешествие с Пинк
+    </p>
     <main>
       <p class="call-to-share">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
       <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="main-form__personal main-form--whitebg">
+        <fieldset class="main-form__personal main-form__fieldset main-form__fieldset--whitebg">
           <label for="surname">Фамилия:</label>
           <input type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
           <label for="name">Имя:</label>
@@ -34,7 +35,7 @@
           <label for="father-name">Отчество</label>
           <input type="text" name="father-name" placeholder="Ну и отчество тоже" id="father name">
         </fieldset>
-        <fieldset class="main-form__goals main-form--greybg">
+        <fieldset class="main-form__goals main-form__fieldset main-form__fieldset--greybg">
           <legend>Ваши безбашенные достижения в путешествии</legend>
           <input type="checkbox" name="selfie-with-shark" checked id="selfie-with-shark">
           <label for="selfie-with-shark">Сделал селфи с акулой</label>
@@ -49,13 +50,13 @@
           <input type="checkbox" name="hotel-destroy" id="hotel-destroy">
           <label for="hotel-destroy">Разгромил отель</label>
         </fieldset>
-        <fieldset class="main-form__contacts main-form--whitebg">
+        <fieldset class="main-form__contacts main-form__fieldset main-form__fieldset--whitebg">
           <label for="tel">Номер телефона</label>
           <input type="tel" name="tel" placeholder="Номер, пожалуйста" id="tel">
           <label for="email">Адресс почты</label>
           <input type="email" name="email" placeholder="Введите почту" id="email">
         </fieldset>
-        <fieldset class=" main-form__device main-form--greybg">
+        <fieldset class=" main-form__device main-form__fieldset main-form__fieldset--greybg">
           <legend>С каким приложением путешествовали?</legend>
           <input type="radio" name="ios" id="ios" checked>
           <label for="ios">Pink для iOS</label>
@@ -64,7 +65,7 @@
           <input type="radio" name="windows" id="windows">
           <label for="windows">Windows Phone</label>
         </fieldset>
-        <fieldset class="main-form__about main-form--whitebg">
+        <fieldset class="main-form__about main-form__fieldset main-form__fieldset--whitebg">
           <legend>Опишите свои эмоции</legend>
           <textarea class="main-form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
@@ -75,12 +76,12 @@
     <footer class="inner-footer">
       <a class="logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
       <ul class="social-network">
-        <li class="social-network__twitter social-network__item"><a href="#">Twitter</a></li>
-        <li class="social-network__facebook social-network__item"><a href="#">Facebook</a></li>
-        <li class="social-network__youtube social-network__item"><a href="#">Youtube</a></li>
+        <li class="social-network__item social-network__item--twitter"><a href="#">Twitter</a></li>
+        <li class="social-network__item social-network__item--facebook"><a href="#">Facebook</a></li>
+        <li class="social-network__item social-network__item--youtube"><a href="#">Youtube</a></li>
       </ul>
       <div class="copyright">
-        <span>Разработанно <img src="#" alt="Лого академии"></span>
+        Разработанно <a href="/index.html" class="copyright__logo-link"><img src="#" alt="Лого академии"></a>
       </div>
     </footer>
   </body>

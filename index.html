@@ -6,6 +6,7 @@
   </head>
   <body>
     <header class="page-header">
+      <h1 class="page-header--title">Пинк -- уникально приложение фотографии</h1>
       <div class="top-bar">
         <a class="logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
         <nav class="main-nav">
@@ -17,44 +18,60 @@
           </ul>
         </nav>
       </div>
-      <a href="#" class="page-header__download-btn btn">Скачать приложение</a>
+    </header>
+    <div class="download-app">
+      <a href="#" class="download-app__btn btn">Скачать приложение</a>
       <ul class="os-support">
-        <li class="os-support__image-apple">Apple</li>
-        <li class="os-support__image-android">Android</li>
-        <li class="os-support__image-windows">Windows</li>
+        <li class="os-support__image os-support__image--apple"><a href="#">Apple</a></li>
+        <li class="os-support__image os-support__image--android"><a href="#">Android</a></li>
+        <li class="os-support__image os-support__image--windows"><a href="#">Windows</a></li>
       </ul>
       <p class="page-header__available-device">
         Доступно на iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
-    </header>
+    </div>
     <main>
       <div class="intro">
         <p class="intro__promo-text">
           Устали от серости мегаполиса? Нам есть что вам предложить!
         </p>
       </div>
-      <div class="app-preview block--grey">
+      <div class="app-preview app-preview--grey">
         <div class="features">
-          <h3 class="features__header">Поднимает настроение</h3>
+          <h2 class="features__header">Поднимает настроение</h2>
           <p class="features__about">Приложение позволит вам победить осеннию хандру и депрессию буквально в несколько кликов!</p>
         </div>
         <div class="features">
-          <h3 class="features__header">Меняет мир вокруг</h3>
+          <h2 class="features__header">Меняет мир вокруг</h2>
           <p class="features__about">Сделайте снимок и украсьте его смайликом или текстовой подписью, что бы усилить эффект</p>
         </div>
         <div class="features">
-          <h3 class="features__header">Заводит новых друзей</h3>
+          <h2 class="features__header">Заводит новых друзей</h2>
           <p class="features__about">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
       </div>
-      <div class="testimonals">
-        <b class="testimonals__name">Николай Петров</b>
-        <p class="testimonals_text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </div>
-      <div class="prices block--grey">
-        <input type="radio" name="slider-control" id="prices__slider-control-1" class="prices__slider-control" checked>
-        <label for="prices__slider-control-1" class="prices__slider-label">1</label>
-        <table class="prices_table prices_table--1">
+      <form class="testimonals">
+        <input type="radio" name="slider-control" id="testimonals__slider-control-1" class="testimonals__slider-control" checked>
+        <label for="testimonals__slider-control-1" class="testimonals__slider-label">1</label>
+        <div class="testimonals__post">
+          <b class="testimonals__name">Николай Петров</b>
+          <p class="testimonals_text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <input type="radio" name="slider-control" id="testimonals__slider-control-2" class="testimonals__slider-control">
+        <label for="testimonals__slider-control-2" class="testimonals__slider-label">2</label>
+        <div class="testimonals__post">
+          <b class="testimonals__name">Николай Петров</b>
+          <p class="testimonals_text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <input type="radio" name="slider-control" id="testimonals__slider-control-3" class="testimonals__slider-control">
+        <label for="testimonals__slider-control-3" class="testimonals__slider-label">3</label>
+        <div class="testimonals__post">
+          <b class="testimonals__name">Николай Петров</b>
+          <p class="testimonals_text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+      </form>
+      <form class="prices prices--grey">
+        <table class="prices_table">
           <tr>
             <th>Стандарт</th>
           </tr>
@@ -71,62 +88,24 @@
             <td>n</td>
           </tr>
         </table>
-        <input type="radio" name="slider-control" id="prices__slider-control-2" class="prices__slider-control">
-        <label for="prices__slider-control-2" class="prices__slider-label">2</label>
-        <table class="prices_table prices_table--2">
-          <tr>
-            <th>Стандарт</th>
-          </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-            <td>y</td>
-          </tr>
-          <tr>
-            <td>Смайлики</td>
-            <td>y</td>
-          </tr>
-          <tr>
-            <td>Комментарии</td>
-            <td>n</td>
-          </tr>
-        </table>
-        <input type="radio" name="slider-control" id="prices__slider-control-3" class="prices__slider-control">
-        <label for="prices__slider-control-3" class="prices__slider-label">3</label>
-        <table class="prices_table prices_table--3">
-          <tr>
-            <th>Стандарт</th>
-          </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-            <td>y</td>
-          </tr>
-          <tr>
-            <td>Смайлики</td>
-            <td>y</td>
-          </tr>
-          <tr>
-            <td>Комментарии</td>
-            <td>n</td>
-          </tr>
-        </table>
-      </div>
+      </form>
     </main>
     <footer class="page-footer">
       <p class="page-footer__call-to-action">
         Остались вопросы?
         Свяжитесь с нами!
       </p>
-      <p class="contact-call contacts">
-        <strong class="contacts_header">Звоните:</strong>
-        <span class="contacts_details"><a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a></span>
+      <p class="contacts contacts__call">
+        <strong class="contacts__header">Звоните:</strong>
+        <span class="contacts__details"><a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a></span>
       </p>
-      <p class="contacts-mail contacts">
-        <strong class="contacts_header">Пишите:</strong>
-        <span class="contacts_details"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+      <p class="contacts contacts__mail">
+        <strong class="contacts__header">Пишите:</strong>
+        <span class="contacts__details"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
       </p>
-      <p class="contacts-adres contacts">
-        <strong class="contacts_header">Приезжайте в гости</strong>
-        <span class="contacts_details">ул. Большая Конюшенная, 19/8</span>
+      <p class="contacts contacts__adres">
+        <strong class="contacts__header">Приезжайте в гости</strong>
+        <span class="contacts__details">ул. Большая Конюшенная, 19/8</span>
       </p>
       <div class="map"><img src="http://placehold.it/150x100" alt="map"></div>
     </footer>

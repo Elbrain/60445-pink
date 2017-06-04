@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="inner-header">
+    <header class="page-header">
       <div class="top-bar">
         <a class="logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
         <nav class="main-nav">
@@ -17,16 +17,16 @@
           </ul>
         </nav>
       </div>
-      <p class="inner-header__about-page">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </p>
     </header>
+    <p class="announce">
+      Конкурс на самое безбашенное путешествие с Пинк
+    </p>
     <main>
       <p class="call-to-share">
         Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
       <section class="album">
-        <div class="album__photo album__photo-panoramic">
+        <div class="album__photo album__photo--panoramic">
           <img src="http://placehold.it/150x100" alt="#">
         </div>
         <div class="ablum-description">
@@ -98,7 +98,7 @@
       <p class="call-to-share">
         Затмите их всех! Выкладывайте все, что накопилось в телефоне!
       </p>
-      <div class="post-photo">
+      <form class="post-photo" action="https://echo.htmlacademy.ru/" method="post">
         <img src="http://placehold.it/150x100" alt="#" class="post-photo__img">
         <ul class="post-photo__tools">
           <li class="post-photo__crop"><button>Crop</button></li>
@@ -106,19 +106,19 @@
           <li class="post-photo__light-control"><button>Light</button></li>
         </ul>
         <input type="range" min="0" max="100" class="post-photo__range">
-      </div>
-      <button type="submit" class="btn post-photo__btn">Запостить</button>
-      <button type="reset" class="btn post-photo__btn--disabled">Отмена</button>
+        <button type="submit" class="btn post-photo__btn">Запостить</button>
+        <button type="reset" class="btn post-photo__btn--disabled">Отмена</button>
+      </form>
     </main>
     <footer class="inner-footer">
       <a class="logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
       <ul class="social-network">
-        <li class="social-network__twitter social-network__item"><a href="#">Twitter</a></li>
-        <li class="social-network__facebook social-network__item"><a href="#">Facebook</a></li>
-        <li class="social-network__youtube social-network__item"><a href="#">Youtube</a></li>
+        <li class="social-network__item social-network__item--twitter"><a href="#">Twitter</a></li>
+        <li class="social-network__item social-network__item--facebook"><a href="#">Facebook</a></li>
+        <li class="social-network__item social-network__item--youtube"><a href="#">Youtube</a></li>
       </ul>
       <div class="copyright">
-        <span>Разработанно <img src="#" alt="Лого академии"></span>
+        Разработанно <a href="/index.html" class="copyright__logo-link"><img src="#" alt="Лого академии"></a>
       </div>
     </footer>
   </body>
