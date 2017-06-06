@@ -5,8 +5,109 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <h1 class="page-header__title">Пинк -- уникально приложение фотографии</h1>
+      <div class="top-bar">
+        <a class="logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
+        <nav class="main-nav">
+          <ul>
+            <li class="main-nav__link"><a>Главная</a></li>
+            <li class="main-nav__link"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__link"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__link"><a href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+    <div class="download-app">
+      <a href="#" class="download-app__btn btn">Скачать приложение</a>
+      <ul class="os-support">
+        <li class="os-support__image os-support__image--apple"><a href="#">Apple</a></li>
+        <li class="os-support__image os-support__image--android"><a href="#">Android</a></li>
+        <li class="os-support__image os-support__image--windows"><a href="#">Windows</a></li>
+      </ul>
+      <p class="download-app__available-device">
+        Доступно на iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </div>
+      <div class="intro">
+        <p class="intro__promo-text">
+          Устали от серости мегаполиса? Нам есть что вам предложить!
+        </p>
+      </div>
+      <div class="app-preview app-preview--grey">
+        <div class="features">
+          <h2 class="features__header">Поднимает настроение</h2>
+          <p class="features__about">Приложение позволит вам победить осеннию хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="features">
+          <h2 class="features__header">Меняет мир вокруг</h2>
+          <p class="features__about">Сделайте снимок и украсьте его смайликом или текстовой подписью, что бы усилить эффект</p>
+        </div>
+        <div class="features">
+          <h2 class="features__header">Заводит новых друзей</h2>
+          <p class="features__about">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </div>
+      <div class="testimonals">
+        <input type="radio" name="slider-control" id="testimonals__slider-control-1" class="testimonals__slider-control" checked>
+        <label for="testimonals__slider-control-1" class="testimonals__slider-label">1</label>
+        <div class="testimonals__post">
+          <b class="testimonals__name">Николай Петров</b>
+          <p class="testimonals_text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <input type="radio" name="slider-control" id="testimonals__slider-control-2" class="testimonals__slider-control">
+        <label for="testimonals__slider-control-2" class="testimonals__slider-label">2</label>
+        <div class="testimonals__post">
+          <b class="testimonals__name">Николай Петров</b>
+          <p class="testimonals_text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <input type="radio" name="slider-control" id="testimonals__slider-control-3" class="testimonals__slider-control">
+        <label for="testimonals__slider-control-3" class="testimonals__slider-label">3</label>
+        <div class="testimonals__post">
+          <b class="testimonals__name">Николай Петров</b>
+          <p class="testimonals_text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+      </div>
+      <form class="prices prices--grey">
+        <table class="prices__table">
+          <tr>
+            <th>Стандарт</th>
+          </tr>
+          <tr>
+            <td>Розовый фильтр</td>
+            <td>y</td>
+          </tr>
+          <tr>
+            <td>Смайлики</td>
+            <td>y</td>
+          </tr>
+          <tr>
+            <td>Комментарии</td>
+            <td>n</td>
+          </tr>
+        </table>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__call-to-action">
+        Остались вопросы?
+        Свяжитесь с нами!
+      </p>
+      <p class="contacts contacts--call">
+        <strong class="contacts__header">Звоните:</strong>
+        <span class="contacts__details"><a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a></span>
+      </p>
+      <p class="contacts contacts--mail">
+        <strong class="contacts__header">Пишите:</strong>
+        <span class="contacts__details"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+      </p>
+      <p class="contacts contacts--adres">
+        <strong class="contacts__header">Приезжайте в гости</strong>
+        <span class="contacts__details">ул. Большая Конюшенная, 19/8</span>
+      </p>
+      <div class="map"><img src="http://placehold.it/150x100" alt="map"></div>
+    </footer>
   </body>
 </html>
